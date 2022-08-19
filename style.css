@@ -1,0 +1,91 @@
+body {
+  background: rgb(172, 70, 255);
+  background: radial-gradient(
+    circle,
+    rgba(172, 70, 255, 1) 0%,
+    rgba(158, 69, 250, 1) 11%,
+    rgba(99, 65, 230, 1) 83%,
+    rgba(64, 62, 218, 0.9248074229691877) 100%
+  );
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.i-11 {
+  width: 700px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.i-11:focus {
+  border: 2px solid transparent;
+  outline: 2px solid rgb(182, 6, 6);
+}
+
+.keyboard {
+  display: flex;
+  justify-content: center;
+}
+.keys {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.keys__num {
+  margin-top: 10px;
+  display: flex;
+}
+.num,
+.key,
+.func {
+  font-size: 20px;
+  border: 1px solid black;
+  padding: 10px 15px;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.keys__str1,
+.keys__str2,
+.keys__str3 {
+  margin-top: 10px;
+  display: flex;
+}
+
+.key,
+.func {
+  margin-right: 15px;
+}
+.keys__func {
+  margin-top: 10px;
+  display: flex;
+}
+
+.func-spase {
+  text-align: center;
+  width: 200px;
+}
+
+.out-11{
+  padding: 10px;
+  width: 1000px;
+  color:white;
+  margin-top: 20px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.active {
+  color: white;
+  border-color: rgb(251, 255, 0);
+  background-color: rgba(187, 5, 5, 0.932);
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
